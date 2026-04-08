@@ -1,0 +1,292 @@
+{
+  "characterId": "jian_xiu",
+  "characterNameZh": "剑修",
+  "characterNameEn": "Sword Cultivator",
+  "starterDeck": [
+    "jianxiu_zhan", "jianxiu_zhan", "jianxiu_zhan", "jianxiu_zhan", "jianxiu_zhan",
+    "jianxiu_gedang", "jianxiu_gedang", "jianxiu_gedang", "jianxiu_gedang",
+    "jianxiu_juqi"
+  ],
+  "cards": [
+    {
+      "id": "jianxiu_zhan",
+      "nameZh": "斩",
+      "nameEn": "Slash",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 6 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_gedang",
+      "nameZh": "格挡",
+      "nameEn": "Defend",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 5 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_juqi",
+      "nameZh": "聚气",
+      "nameEn": "Gather Qi",
+      "descZh": "获得 {value} 点灵力",
+      "descEn": "Gain {value} Energy",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 0,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "gain_energy", "value": 1 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_lianzhan",
+      "nameZh": "连斩",
+      "nameEn": "Chain Slash",
+      "descZh": "造成 {value} 点伤害两次",
+      "descEn": "Deal {value} damage twice",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 4 },
+        { "type": "damage", "value": 4 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_tiebi",
+      "nameZh": "铁壁",
+      "nameEn": "Iron Wall",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 2,
+      "element": "earth",
+      "target": "self",
+      "effects": [{ "type": "block", "value": 12 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_jianyi",
+      "nameZh": "剑意",
+      "nameEn": "Sword Intent",
+      "descZh": "获得 {value} 层力量",
+      "descEn": "Gain {value} Strength",
+      "type": "power",
+      "rarity": "common",
+      "cost": 1,
+      "element": "metal",
+      "target": "self",
+      "effects": [{ "type": "apply_status", "value": 2, "target": "self", "statusType": "strength" }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_huoyan",
+      "nameZh": "火焰斩",
+      "nameEn": "Flame Slash",
+      "descZh": "造成 {value} 点伤害，施加 2 层灼烧",
+      "descEn": "Deal {value} damage, apply 2 Burn",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 2,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 8 },
+        { "type": "apply_status", "value": 2, "statusType": "burn" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_hanshuang",
+      "nameZh": "寒霜剑",
+      "nameEn": "Frost Blade",
+      "descZh": "造成 {value} 点伤害，施加 1 层冰封",
+      "descEn": "Deal {value} damage, apply 1 Freeze",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 2,
+      "element": "water",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 7 },
+        { "type": "apply_status", "value": 1, "statusType": "freeze" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_chouqu",
+      "nameZh": "抽取",
+      "nameEn": "Extract",
+      "descZh": "抽 {value} 张牌",
+      "descEn": "Draw {value} cards",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "draw", "value": 2 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_dumu",
+      "nameZh": "毒雾",
+      "nameEn": "Poison Mist",
+      "descZh": "对所有敌人施加 {value} 层中毒",
+      "descEn": "Apply {value} Poison to ALL enemies",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "all_enemies",
+      "effects": [{ "type": "apply_status", "value": 3, "statusType": "poison", "target": "single_enemy" }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_pofang",
+      "nameZh": "破防",
+      "nameEn": "Break Guard",
+      "descZh": "造成 {value} 点伤害，施加 2 层易伤",
+      "descEn": "Deal {value} damage, apply 2 Vulnerable",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": null,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 5 },
+        { "type": "apply_status", "value": 2, "statusType": "vulnerable" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_wanjian",
+      "nameZh": "万剑归宗",
+      "nameEn": "Myriad Swords Return",
+      "descZh": "对所有敌人造成 {value} 点伤害",
+      "descEn": "Deal {value} damage to ALL enemies",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "metal",
+      "target": "all_enemies",
+      "effects": [{ "type": "damage_all", "value": 10 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_yujian",
+      "nameZh": "御剑术",
+      "nameEn": "Sword Flight",
+      "descZh": "造成 {value} 点伤害，抽 1 张牌",
+      "descEn": "Deal {value} damage, draw 1 card",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 1,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 7 },
+        { "type": "draw", "value": 1 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_hunyuan",
+      "nameZh": "混元护体",
+      "nameEn": "Primordial Shield",
+      "descZh": "获得 {value} 点格挡，获得 1 层敏捷",
+      "descEn": "Gain {value} Block and 1 Dexterity",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "earth",
+      "target": "self",
+      "effects": [
+        { "type": "block", "value": 8 },
+        { "type": "apply_status", "value": 1, "target": "self", "statusType": "dexterity" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_linghuo",
+      "nameZh": "灵火焚天",
+      "nameEn": "Spirit Fire",
+      "descZh": "造成 {value} 点伤害，施加 3 层灼烧",
+      "descEn": "Deal {value} damage, apply 3 Burn",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 10 },
+        { "type": "apply_status", "value": 3, "statusType": "burn" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_tiandi",
+      "nameZh": "天地同寿",
+      "nameEn": "Mutual Destruction",
+      "descZh": "造成 {value} 点伤害，施加 2 层虚弱和 2 层易伤",
+      "descEn": "Deal {value} damage, apply 2 Weak and 2 Vulnerable",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": null,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 8 },
+        { "type": "apply_status", "value": 2, "statusType": "weak" },
+        { "type": "apply_status", "value": 2, "statusType": "vulnerable" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_zhuxian",
+      "nameZh": "诛仙剑",
+      "nameEn": "Immortal-Slaying Sword",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 30 }],
+      "upgradeId": null
+    },
+    {
+      "id": "jianxiu_jianyu",
+      "nameZh": "剑域",
+      "nameEn": "Sword Domain",
+      "descZh": "获得 3 层力量和 3 层敏捷",
+      "descEn": "Gain 3 Strength and 3 Dexterity",
+      "type": "power",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "self",
+      "effects": [
+        { "type": "apply_status", "value": 3, "target": "self", "statusType": "strength" },
+        { "type": "apply_status", "value": 3, "target": "self", "statusType": "dexterity" }
+      ],
+      "upgradeId": null
+    }
+  ]
+}

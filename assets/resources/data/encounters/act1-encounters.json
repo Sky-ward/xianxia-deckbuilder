@@ -1,0 +1,16 @@
+{
+  "normalEncounters": [
+    { "enemies": ["san_xiu"] },
+    { "enemies": ["yao_shou"] },
+    { "enemies": ["xie_xiu"] },
+    { "enemies": ["san_xiu", "san_xiu"] },
+    { "enemies": ["yao_shou", "san_xiu"] }
+  ],
+  "eliteEncounters": [
+    { "enemies": ["xie_xiu", "yao_shou"] },
+    { "enemies": ["san_xiu", "xie_xiu", "san_xiu"] }
+  ],
+  "bossEncounters": [
+    { "enemies": ["lei_jie"] }
+  ]
+}

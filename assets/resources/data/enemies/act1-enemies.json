@@ -1,0 +1,49 @@
+{
+  "enemies": [
+    {
+      "id": "san_xiu",
+      "nameZh": "散修",
+      "nameEn": "Rogue Cultivator",
+      "maxHp": 40,
+      "maxHpVariance": 5,
+      "element": null,
+      "patternType": "cycle",
+      "isBoss": false,
+      "pattern": [
+        { "intent": "attack", "value": 8 },
+        { "intent": "defend", "value": 6 },
+        { "intent": "attack", "value": 8 }
+      ]
+    },
+    {
+      "id": "yao_shou",
+      "nameZh": "妖兽",
+      "nameEn": "Demonic Beast",
+      "maxHp": 30,
+      "maxHpVariance": 4,
+      "element": "wood",
+      "patternType": "cycle",
+      "isBoss": false,
+      "pattern": [
+        { "intent": "attack", "value": 10 },
+        { "intent": "attack", "value": 6, "times": 2 },
+        { "intent": "attack", "value": 12 }
+      ]
+    },
+    {
+      "id": "xie_xiu",
+      "nameZh": "邪修",
+      "nameEn": "Evil Cultivator",
+      "maxHp": 35,
+      "maxHpVariance": 5,
+      "element": "fire",
+      "patternType": "cycle",
+      "isBoss": false,
+      "pattern": [
+        { "intent": "debuff", "value": 2, "statusType": "vulnerable", "statusStacks": 2 },
+        { "intent": "attack", "value": 12 },
+        { "intent": "attack_debuff", "value": 8, "statusType": "weak", "statusStacks": 1 }
+      ]
+    }
+  ]
+}

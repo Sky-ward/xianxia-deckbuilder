@@ -1,0 +1,22 @@
+{
+  "enemies": [
+    {
+      "id": "lei_jie",
+      "nameZh": "雷劫",
+      "nameEn": "Thunder Tribulation",
+      "maxHp": 120,
+      "maxHpVariance": 10,
+      "element": "metal",
+      "patternType": "cycle",
+      "isBoss": true,
+      "pattern": [
+        { "intent": "buff", "value": 2, "statusType": "strength", "statusStacks": 2 },
+        { "intent": "attack", "value": 12 },
+        { "intent": "attack", "value": 7, "times": 2 },
+        { "intent": "attack_debuff", "value": 15, "statusType": "vulnerable", "statusStacks": 2 },
+        { "intent": "defend", "value": 15 },
+        { "intent": "attack", "value": 10, "times": 3 }
+      ]
+    }
+  ]
+}
