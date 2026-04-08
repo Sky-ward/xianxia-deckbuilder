@@ -2,6 +2,7 @@ import { _decorator, Component, Node, Prefab, instantiate, ScrollView, Label, di
 import { MapNodeDisplay } from './map-node-display';
 import { GameManager } from '../../core/game-manager';
 import { MapNode } from '../../models/map-model';
+import { GamePhase } from '../../core/constants';
 
 const { ccclass, property } = _decorator;
 
@@ -106,13 +107,13 @@ export class MapSceneCtrl extends Component {
     private _navigateToCurrentPhase() {
         const phase = GameManager.instance.currentPhase;
         switch (phase) {
-            case 'battle':
+            case GamePhase.Battle:
                 director.loadScene('battle');
                 break;
-            case 'reward':
+            case GamePhase.Reward:
                 director.loadScene('reward');
                 break;
-            case 'game_over':
+            case GamePhase.GameOver:
                 director.loadScene('title');
                 break;
             default:

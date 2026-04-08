@@ -17,6 +17,9 @@ export class BattleSystem {
     private battle: BattleModel;
     private rng: SeededRandom;
 
+    // 保存绑定后的引用，确保 on/off 传入的是同一个函数对象
+    private _onRequestDrawBound: (data: { count: number }) => void;
+
     constructor(player: PlayerModel, enemies: EnemyModel[], cards: CardInstance[], rng: SeededRandom) {
         this.rng = rng;
         const deck = new DeckModel(rng);
@@ -24,7 +27,8 @@ export class BattleSystem {
         this.battle = new BattleModel(player, enemies, deck);
 
         // 监听卡牌效果的抽牌请求
-        gameEvents.on('request_draw', this.onRequestDraw.bind(this));
+        this._onRequestDrawBound = this.onRequestDraw.bind(this);
+        gameEvents.on('request_draw', this._onRequestDrawBound);
     }
 
     get battleModel(): BattleModel {
@@ -179,7 +183,7 @@ export class BattleSystem {
         }
 
         // 清理事件监听
-        gameEvents.off('request_draw', this.onRequestDraw.bind(this));
+        gameEvents.off('request_draw', this._onRequestDrawBound);
     }
 
     /** 响应卡牌效果的抽牌请求 */
@@ -200,6 +204,6 @@ export class BattleSystem {
 
     /** 销毁 */
     destroy(): void {
-        gameEvents.off('request_draw', this.onRequestDraw.bind(this));
+        gameEvents.off('request_draw', this._onRequestDrawBound);
     }
 }
