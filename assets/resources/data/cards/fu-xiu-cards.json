@@ -1,0 +1,343 @@
+{
+  "characterId": "fu_xiu",
+  "characterNameZh": "符修",
+  "characterNameEn": "Talisman Cultivator",
+  "starterDeck": [
+    "fuxiu_fuji", "fuxiu_fuji", "fuxiu_fuji", "fuxiu_fuji",
+    "fuxiu_gedang", "fuxiu_gedang", "fuxiu_gedang", "fuxiu_gedang",
+    "fuxiu_huafu", "fuxiu_huafu"
+  ],
+  "cards": [
+    {
+      "id": "fuxiu_fuji",
+      "nameZh": "符击",
+      "nameEn": "Talisman Strike",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 6 }],
+      "upgradeId": "fuxiu_fuji_plus"
+    },
+    {
+      "id": "fuxiu_fuji_plus",
+      "nameZh": "符击+",
+      "nameEn": "Talisman Strike+",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 9 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_gedang",
+      "nameZh": "护身符",
+      "nameEn": "Protection Talisman",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 5 }],
+      "upgradeId": "fuxiu_gedang_plus"
+    },
+    {
+      "id": "fuxiu_gedang_plus",
+      "nameZh": "护身符+",
+      "nameEn": "Protection Talisman+",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 8 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_huafu",
+      "nameZh": "画符",
+      "nameEn": "Draw Talisman",
+      "descZh": "抽 {value} 张牌",
+      "descEn": "Draw {value} cards",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "draw", "value": 2 }],
+      "upgradeId": "fuxiu_huafu_plus"
+    },
+    {
+      "id": "fuxiu_huafu_plus",
+      "nameZh": "画符+",
+      "nameEn": "Draw Talisman+",
+      "descZh": "抽 {value} 张牌",
+      "descEn": "Draw {value} cards",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "draw", "value": 3 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_huofu",
+      "nameZh": "火符",
+      "nameEn": "Fire Talisman",
+      "descZh": "造成 {value} 点伤害，施加 2 层灼烧",
+      "descEn": "Deal {value} damage, apply 2 Burn",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 5 },
+        { "type": "apply_status", "value": 2, "statusType": "burn" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_bingfu",
+      "nameZh": "冰符",
+      "nameEn": "Ice Talisman",
+      "descZh": "造成 {value} 点伤害，施加 1 层冰封",
+      "descEn": "Deal {value} damage, apply 1 Freeze",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "water",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 5 },
+        { "type": "apply_status", "value": 1, "statusType": "freeze" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_leifu",
+      "nameZh": "雷符",
+      "nameEn": "Thunder Talisman",
+      "descZh": "对所有敌人造成 {value} 点伤害",
+      "descEn": "Deal {value} damage to ALL enemies",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "metal",
+      "target": "all_enemies",
+      "effects": [{ "type": "damage_all", "value": 5 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_difu",
+      "nameZh": "地符",
+      "nameEn": "Earth Talisman",
+      "descZh": "获得 {value} 点格挡，施加 1 层脆弱",
+      "descEn": "Gain {value} Block, apply 1 Brittle",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "earth",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "block", "value": 6 },
+        { "type": "apply_status", "value": 1, "statusType": "brittle" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_mufu",
+      "nameZh": "木符",
+      "nameEn": "Wood Talisman",
+      "descZh": "施加 {value} 层中毒，抽 1 张牌",
+      "descEn": "Apply {value} Poison, draw 1 card",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "apply_status", "value": 3, "statusType": "poison" },
+        { "type": "draw", "value": 1 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_fuyin",
+      "nameZh": "符印连击",
+      "nameEn": "Talisman Barrage",
+      "descZh": "造成 {value} 点伤害 3 次",
+      "descEn": "Deal {value} damage 3 times",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 2,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 3 },
+        { "type": "damage", "value": 3 },
+        { "type": "damage", "value": 3 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_lingfu",
+      "nameZh": "灵符",
+      "nameEn": "Spirit Talisman",
+      "descZh": "获得 {value} 点灵力",
+      "descEn": "Gain {value} Energy",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 0,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "gain_energy", "value": 1 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_wuxingfu",
+      "nameZh": "五行符阵",
+      "nameEn": "Five Elements Array",
+      "descZh": "造成 {value} 点伤害，施加 1 层灼烧、1 层中毒、1 层流血",
+      "descEn": "Deal {value} damage, apply 1 Burn, 1 Poison, 1 Bleed",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": null,
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 8 },
+        { "type": "apply_status", "value": 1, "statusType": "burn" },
+        { "type": "apply_status", "value": 1, "statusType": "poison" },
+        { "type": "apply_status", "value": 1, "statusType": "bleed" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_wanfu",
+      "nameZh": "万符齐发",
+      "nameEn": "Thousand Talismans",
+      "descZh": "对所有敌人造成 {value} 点伤害，施加 2 层灼烧",
+      "descEn": "Deal {value} damage to ALL enemies, apply 2 Burn",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "fire",
+      "target": "all_enemies",
+      "effects": [
+        { "type": "damage_all", "value": 8 },
+        { "type": "apply_status", "value": 2, "statusType": "burn" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_jinzhong",
+      "nameZh": "金钟护体",
+      "nameEn": "Golden Bell Shield",
+      "descZh": "获得 {value} 点格挡和 1 层敏捷",
+      "descEn": "Gain {value} Block and 1 Dexterity",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "metal",
+      "target": "self",
+      "effects": [
+        { "type": "block", "value": 10 },
+        { "type": "apply_status", "value": 1, "target": "self", "statusType": "dexterity" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_fushu",
+      "nameZh": "符术精通",
+      "nameEn": "Talisman Mastery",
+      "descZh": "获得 2 层力量，抽 {value} 张牌",
+      "descEn": "Gain 2 Strength, draw {value} cards",
+      "type": "power",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": null,
+      "target": "self",
+      "effects": [
+        { "type": "apply_status", "value": 2, "target": "self", "statusType": "strength" },
+        { "type": "draw", "value": 1 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_fengyin",
+      "nameZh": "封印符",
+      "nameEn": "Sealing Talisman",
+      "descZh": "施加 {value} 层虚弱和 2 层易伤",
+      "descEn": "Apply {value} Weak and 2 Vulnerable",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 1,
+      "element": "water",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "apply_status", "value": 3, "statusType": "weak" },
+        { "type": "apply_status", "value": 2, "statusType": "vulnerable" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_tianlei",
+      "nameZh": "天雷符",
+      "nameEn": "Heavenly Thunder Talisman",
+      "descZh": "对所有敌人造成 {value} 点伤害",
+      "descEn": "Deal {value} damage to ALL enemies",
+      "type": "attack",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "all_enemies",
+      "effects": [{ "type": "damage_all", "value": 20 }],
+      "upgradeId": "fuxiu_tianlei_plus"
+    },
+    {
+      "id": "fuxiu_tianlei_plus",
+      "nameZh": "天雷符+",
+      "nameEn": "Heavenly Thunder Talisman+",
+      "descZh": "对所有敌人造成 {value} 点伤害",
+      "descEn": "Deal {value} damage to ALL enemies",
+      "type": "attack",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "all_enemies",
+      "effects": [{ "type": "damage_all", "value": 28 }],
+      "upgradeId": null
+    },
+    {
+      "id": "fuxiu_wanfa",
+      "nameZh": "万法归一",
+      "nameEn": "All Laws Return to One",
+      "descZh": "获得 3 层力量、3 层敏捷，抽 2 张牌",
+      "descEn": "Gain 3 Strength, 3 Dexterity, draw 2 cards",
+      "type": "power",
+      "rarity": "rare",
+      "cost": 3,
+      "element": null,
+      "target": "self",
+      "effects": [
+        { "type": "apply_status", "value": 3, "target": "self", "statusType": "strength" },
+        { "type": "apply_status", "value": 3, "target": "self", "statusType": "dexterity" },
+        { "type": "draw", "value": 2 }
+      ],
+      "upgradeId": null
+    }
+  ]
+}

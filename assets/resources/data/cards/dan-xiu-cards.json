@@ -1,0 +1,332 @@
+{
+  "characterId": "dan_xiu",
+  "characterNameZh": "丹修",
+  "characterNameEn": "Pill Cultivator",
+  "starterDeck": [
+    "danxiu_zhangji", "danxiu_zhangji", "danxiu_zhangji", "danxiu_zhangji",
+    "danxiu_gedang", "danxiu_gedang", "danxiu_gedang", "danxiu_gedang",
+    "danxiu_lianqi", "danxiu_lianqi"
+  ],
+  "cards": [
+    {
+      "id": "danxiu_zhangji",
+      "nameZh": "掌击",
+      "nameEn": "Palm Strike",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 6 }],
+      "upgradeId": "danxiu_zhangji_plus"
+    },
+    {
+      "id": "danxiu_zhangji_plus",
+      "nameZh": "掌击+",
+      "nameEn": "Palm Strike+",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 9 }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_gedang",
+      "nameZh": "丹气护体",
+      "nameEn": "Pill Qi Shield",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 5 }],
+      "upgradeId": "danxiu_gedang_plus"
+    },
+    {
+      "id": "danxiu_gedang_plus",
+      "nameZh": "丹气护体+",
+      "nameEn": "Pill Qi Shield+",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 8 }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_lianqi",
+      "nameZh": "炼气",
+      "nameEn": "Refine Qi",
+      "descZh": "恢复 {value} 点HP",
+      "descEn": "Heal {value} HP",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "wood",
+      "target": "self",
+      "effects": [{ "type": "heal", "value": 4 }],
+      "upgradeId": "danxiu_lianqi_plus"
+    },
+    {
+      "id": "danxiu_lianqi_plus",
+      "nameZh": "炼气+",
+      "nameEn": "Refine Qi+",
+      "descZh": "恢复 {value} 点HP",
+      "descEn": "Heal {value} HP",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "wood",
+      "target": "self",
+      "effects": [{ "type": "heal", "value": 7 }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_dudan",
+      "nameZh": "毒丹",
+      "nameEn": "Poison Pill",
+      "descZh": "施加 {value} 层中毒",
+      "descEn": "Apply {value} Poison",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "single_enemy",
+      "effects": [{ "type": "apply_status", "value": 5, "statusType": "poison" }],
+      "upgradeId": "danxiu_dudan_plus"
+    },
+    {
+      "id": "danxiu_dudan_plus",
+      "nameZh": "毒丹+",
+      "nameEn": "Poison Pill+",
+      "descZh": "施加 {value} 层中毒",
+      "descEn": "Apply {value} Poison",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "single_enemy",
+      "effects": [{ "type": "apply_status", "value": 8, "statusType": "poison" }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_huodan",
+      "nameZh": "火丹",
+      "nameEn": "Fire Pill",
+      "descZh": "造成 {value} 点伤害，施加 3 层灼烧",
+      "descEn": "Deal {value} damage, apply 3 Burn",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 2,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 6 },
+        { "type": "apply_status", "value": 3, "statusType": "burn" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_huifudan",
+      "nameZh": "回复丹",
+      "nameEn": "Recovery Pill",
+      "descZh": "恢复 {value} 点HP，获得 5 点格挡",
+      "descEn": "Heal {value} HP, gain 5 Block",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 2,
+      "element": "wood",
+      "target": "self",
+      "effects": [
+        { "type": "heal", "value": 8 },
+        { "type": "block", "value": 5 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_sandu",
+      "nameZh": "散毒",
+      "nameEn": "Spread Poison",
+      "descZh": "对所有敌人施加 {value} 层中毒",
+      "descEn": "Apply {value} Poison to ALL enemies",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "all_enemies",
+      "effects": [{ "type": "apply_status", "value": 3, "statusType": "poison", "target": "single_enemy" }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_lingdan",
+      "nameZh": "灵丹",
+      "nameEn": "Spirit Pill",
+      "descZh": "获得 {value} 点灵力，抽 1 张牌",
+      "descEn": "Gain {value} Energy, draw 1 card",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 0,
+      "element": null,
+      "target": "self",
+      "effects": [
+        { "type": "gain_energy", "value": 1 },
+        { "type": "draw", "value": 1 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_cuidu",
+      "nameZh": "催毒术",
+      "nameEn": "Catalyze Poison",
+      "descZh": "造成 {value} 点伤害，每层中毒额外+2伤害",
+      "descEn": "Deal {value} damage (+2 per Poison on target)",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "wood",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 4 }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_tubi",
+      "nameZh": "土壁",
+      "nameEn": "Earth Wall",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 2,
+      "element": "earth",
+      "target": "self",
+      "effects": [{ "type": "block", "value": 14 }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_jvdu",
+      "nameZh": "剧毒",
+      "nameEn": "Deadly Poison",
+      "descZh": "施加 {value} 层中毒",
+      "descEn": "Apply {value} Poison",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "wood",
+      "target": "single_enemy",
+      "effects": [{ "type": "apply_status", "value": 12, "statusType": "poison" }],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_huiyao",
+      "nameZh": "辉耀",
+      "nameEn": "Radiance",
+      "descZh": "造成 {value} 点伤害，恢复等量HP",
+      "descEn": "Deal {value} damage, heal equal amount",
+      "type": "attack",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "fire",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 10 },
+        { "type": "heal", "value": 10 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_tielu",
+      "nameZh": "铁炉",
+      "nameEn": "Iron Furnace",
+      "descZh": "获得 1 层力量和 {value} 点格挡",
+      "descEn": "Gain 1 Strength and {value} Block",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "metal",
+      "target": "self",
+      "effects": [
+        { "type": "apply_status", "value": 1, "target": "self", "statusType": "strength" },
+        { "type": "block", "value": 8 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_wandu",
+      "nameZh": "万毒归元",
+      "nameEn": "Myriad Poisons",
+      "descZh": "对所有敌人施加 {value} 层中毒和 2 层虚弱",
+      "descEn": "Apply {value} Poison and 2 Weak to ALL enemies",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "wood",
+      "target": "all_enemies",
+      "effects": [
+        { "type": "apply_status", "value": 6, "statusType": "poison", "target": "single_enemy" },
+        { "type": "apply_status", "value": 2, "statusType": "weak", "target": "single_enemy" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_shuiyue",
+      "nameZh": "水月功",
+      "nameEn": "Water Moon Art",
+      "descZh": "获得 {value} 点格挡，恢复 5 点HP",
+      "descEn": "Gain {value} Block, heal 5 HP",
+      "type": "skill",
+      "rarity": "uncommon",
+      "cost": 2,
+      "element": "water",
+      "target": "self",
+      "effects": [
+        { "type": "block", "value": 10 },
+        { "type": "heal", "value": 5 }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_jiuzhuan",
+      "nameZh": "九转金丹",
+      "nameEn": "Nine-Turn Golden Pill",
+      "descZh": "恢复 {value} 点HP，获得 2 层力量",
+      "descEn": "Heal {value} HP, gain 2 Strength",
+      "type": "power",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "fire",
+      "target": "self",
+      "effects": [
+        { "type": "heal", "value": 15 },
+        { "type": "apply_status", "value": 2, "target": "self", "statusType": "strength" }
+      ],
+      "upgradeId": null
+    },
+    {
+      "id": "danxiu_bushi",
+      "nameZh": "不死金身",
+      "nameEn": "Immortal Golden Body",
+      "descZh": "最大HP +10，恢复 {value} 点HP",
+      "descEn": "+10 Max HP, heal {value} HP",
+      "type": "power",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "earth",
+      "target": "self",
+      "effects": [
+        { "type": "heal", "value": 20 }
+      ],
+      "upgradeId": null
+    }
+  ]
+}
