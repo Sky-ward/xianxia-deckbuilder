@@ -20,6 +20,20 @@
       "element": "metal",
       "target": "single_enemy",
       "effects": [{ "type": "damage", "value": 6 }],
+      "upgradeId": "jianxiu_zhan_plus"
+    },
+    {
+      "id": "jianxiu_zhan_plus",
+      "nameZh": "斩+",
+      "nameEn": "Slash+",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "starter",
+      "cost": 1,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 9 }],
       "upgradeId": null
     },
     {
@@ -34,6 +48,20 @@
       "element": null,
       "target": "self",
       "effects": [{ "type": "block", "value": 5 }],
+      "upgradeId": "jianxiu_gedang_plus"
+    },
+    {
+      "id": "jianxiu_gedang_plus",
+      "nameZh": "格挡+",
+      "nameEn": "Defend+",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 1,
+      "element": null,
+      "target": "self",
+      "effects": [{ "type": "block", "value": 8 }],
       "upgradeId": null
     },
     {
@@ -48,6 +76,23 @@
       "element": null,
       "target": "self",
       "effects": [{ "type": "gain_energy", "value": 1 }],
+      "upgradeId": "jianxiu_juqi_plus"
+    },
+    {
+      "id": "jianxiu_juqi_plus",
+      "nameZh": "聚气+",
+      "nameEn": "Gather Qi+",
+      "descZh": "获得 {value} 点灵力，抽 1 张牌",
+      "descEn": "Gain {value} Energy, draw 1 card",
+      "type": "skill",
+      "rarity": "starter",
+      "cost": 0,
+      "element": null,
+      "target": "self",
+      "effects": [
+        { "type": "gain_energy", "value": 1 },
+        { "type": "draw", "value": 1 }
+      ],
       "upgradeId": null
     },
     {
@@ -65,6 +110,23 @@
         { "type": "damage", "value": 4 },
         { "type": "damage", "value": 4 }
       ],
+      "upgradeId": "jianxiu_lianzhan_plus"
+    },
+    {
+      "id": "jianxiu_lianzhan_plus",
+      "nameZh": "连斩+",
+      "nameEn": "Chain Slash+",
+      "descZh": "造成 {value} 点伤害两次",
+      "descEn": "Deal {value} damage twice",
+      "type": "attack",
+      "rarity": "common",
+      "cost": 1,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [
+        { "type": "damage", "value": 6 },
+        { "type": "damage", "value": 6 }
+      ],
       "upgradeId": null
     },
     {
@@ -79,6 +141,20 @@
       "element": "earth",
       "target": "self",
       "effects": [{ "type": "block", "value": 12 }],
+      "upgradeId": "jianxiu_tiebi_plus"
+    },
+    {
+      "id": "jianxiu_tiebi_plus",
+      "nameZh": "铁壁+",
+      "nameEn": "Iron Wall+",
+      "descZh": "获得 {value} 点格挡",
+      "descEn": "Gain {value} Block",
+      "type": "skill",
+      "rarity": "common",
+      "cost": 2,
+      "element": "earth",
+      "target": "self",
+      "effects": [{ "type": "block", "value": 16 }],
       "upgradeId": null
     },
     {
@@ -269,6 +345,20 @@
       "element": "metal",
       "target": "single_enemy",
       "effects": [{ "type": "damage", "value": 30 }],
+      "upgradeId": "jianxiu_zhuxian_plus"
+    },
+    {
+      "id": "jianxiu_zhuxian_plus",
+      "nameZh": "诛仙剑+",
+      "nameEn": "Immortal-Slaying Sword+",
+      "descZh": "造成 {value} 点伤害",
+      "descEn": "Deal {value} damage",
+      "type": "attack",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "single_enemy",
+      "effects": [{ "type": "damage", "value": 40 }],
       "upgradeId": null
     },
     {
@@ -285,6 +375,23 @@
       "effects": [
         { "type": "apply_status", "value": 3, "target": "self", "statusType": "strength" },
         { "type": "apply_status", "value": 3, "target": "self", "statusType": "dexterity" }
+      ],
+      "upgradeId": "jianxiu_jianyu_plus"
+    },
+    {
+      "id": "jianxiu_jianyu_plus",
+      "nameZh": "剑域+",
+      "nameEn": "Sword Domain+",
+      "descZh": "获得 4 层力量和 4 层敏捷",
+      "descEn": "Gain 4 Strength and 4 Dexterity",
+      "type": "power",
+      "rarity": "rare",
+      "cost": 3,
+      "element": "metal",
+      "target": "self",
+      "effects": [
+        { "type": "apply_status", "value": 4, "target": "self", "statusType": "strength" },
+        { "type": "apply_status", "value": 4, "target": "self", "statusType": "dexterity" }
       ],
       "upgradeId": null
     }

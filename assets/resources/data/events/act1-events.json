@@ -1,0 +1,192 @@
+{
+  "events": [
+    {
+      "id": "evt_wandering_monk",
+      "nameZh": "云游僧",
+      "nameEn": "Wandering Monk",
+      "descZh": "一位云游僧人拦住你的去路，双手合十道：\"施主，贫僧观你气运不凡，可愿与贫僧论道？\"",
+      "descEn": "A wandering monk blocks your path. 'Traveler, I sense great destiny in you. Will you discuss the Dao with me?'",
+      "choices": [
+        {
+          "id": "discuss",
+          "textZh": "论道（失去15 HP，获得一张稀有牌）",
+          "textEn": "Discuss the Dao (Lose 15 HP, gain a Rare card)",
+          "effects": [
+            { "type": "lose_hp", "value": 15 },
+            { "type": "gain_card", "rarity": "rare" }
+          ]
+        },
+        {
+          "id": "donate",
+          "textZh": "布施（失去50金币，恢复25% HP）",
+          "textEn": "Donate (Lose 50 gold, heal 25% HP)",
+          "effects": [
+            { "type": "lose_gold", "value": 50 },
+            { "type": "heal_percent", "value": 25 }
+          ],
+          "condition": { "type": "min_gold", "value": 50 }
+        },
+        {
+          "id": "leave",
+          "textZh": "离开",
+          "textEn": "Leave",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "evt_spirit_spring",
+      "nameZh": "灵泉",
+      "nameEn": "Spirit Spring",
+      "descZh": "你发现一处隐藏的灵泉，泉水散发着淡淡的灵气。",
+      "descEn": "You discover a hidden spirit spring, its waters shimmering with faint spiritual energy.",
+      "choices": [
+        {
+          "id": "drink",
+          "textZh": "饮用灵泉（恢复满HP）",
+          "textEn": "Drink from the spring (Heal to full HP)",
+          "effects": [
+            { "type": "heal_full" }
+          ]
+        },
+        {
+          "id": "bathe",
+          "textZh": "沐浴修炼（最大HP+5，失去所有格挡）",
+          "textEn": "Bathe and cultivate (+5 Max HP)",
+          "effects": [
+            { "type": "gain_max_hp", "value": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "evt_abandoned_cave",
+      "nameZh": "废弃洞府",
+      "nameEn": "Abandoned Cave",
+      "descZh": "你发现一处前辈修士留下的废弃洞府，里面似乎还残留着一些宝物。",
+      "descEn": "You discover an abandoned cultivation cave. Some treasures may remain inside.",
+      "choices": [
+        {
+          "id": "search",
+          "textZh": "搜索洞府（50%获得法宝，50%失去10 HP）",
+          "textEn": "Search the cave (50% relic, 50% lose 10 HP)",
+          "effects": [
+            { "type": "random", "outcomes": [
+              { "weight": 50, "effects": [{ "type": "gain_relic", "rarity": "common" }] },
+              { "weight": 50, "effects": [{ "type": "lose_hp", "value": 10 }] }
+            ]}
+          ]
+        },
+        {
+          "id": "leave",
+          "textZh": "离开",
+          "textEn": "Leave",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "evt_merchant_ambush",
+      "nameZh": "黑市",
+      "nameEn": "Black Market",
+      "descZh": "一个神秘的修士低声对你说：\"要不要看看我的好东西？都是从秘境里弄来的……\"",
+      "descEn": "A mysterious cultivator whispers: 'Want to see my goods? All from secret realms...'",
+      "choices": [
+        {
+          "id": "buy_potion",
+          "textZh": "购买丹药（75金币，恢复30% HP）",
+          "textEn": "Buy elixir (75 gold, heal 30% HP)",
+          "effects": [
+            { "type": "lose_gold", "value": 75 },
+            { "type": "heal_percent", "value": 30 }
+          ],
+          "condition": { "type": "min_gold", "value": 75 }
+        },
+        {
+          "id": "buy_card",
+          "textZh": "购买功法（100金币，获得一张非普通牌）",
+          "textEn": "Buy technique (100 gold, gain an Uncommon card)",
+          "effects": [
+            { "type": "lose_gold", "value": 100 },
+            { "type": "gain_card", "rarity": "uncommon" }
+          ],
+          "condition": { "type": "min_gold", "value": 100 }
+        },
+        {
+          "id": "rob",
+          "textZh": "抢夺（获得100金币，失去5 Max HP）",
+          "textEn": "Rob (Gain 100 gold, lose 5 Max HP)",
+          "effects": [
+            { "type": "gain_gold", "value": 100 },
+            { "type": "lose_max_hp", "value": 5 }
+          ]
+        },
+        {
+          "id": "leave",
+          "textZh": "离开",
+          "textEn": "Leave",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "evt_ancient_altar",
+      "nameZh": "远古祭坛",
+      "nameEn": "Ancient Altar",
+      "descZh": "你发现一座覆满苔藓的远古祭坛，上面的符文依然隐隐发光。将血滴入祭坛似乎能触发什么。",
+      "descEn": "You find an ancient altar covered in moss. Its runes still glow faintly. Blood offering may trigger something.",
+      "choices": [
+        {
+          "id": "offer",
+          "textZh": "血祭（失去当前HP的30%，移除牌组中一张牌）",
+          "textEn": "Blood sacrifice (Lose 30% current HP, remove a card)",
+          "effects": [
+            { "type": "lose_hp_percent", "value": 30 },
+            { "type": "remove_card" }
+          ]
+        },
+        {
+          "id": "pray",
+          "textZh": "祈祷（获得50金币）",
+          "textEn": "Pray (Gain 50 gold)",
+          "effects": [
+            { "type": "gain_gold", "value": 50 }
+          ]
+        },
+        {
+          "id": "leave",
+          "textZh": "离开",
+          "textEn": "Leave",
+          "effects": []
+        }
+      ]
+    },
+    {
+      "id": "evt_treasure_guardian",
+      "nameZh": "守宝灵兽",
+      "nameEn": "Treasure Guardian",
+      "descZh": "一只沉睡的灵兽守护着一个宝箱。你可以尝试偷取，或者惊醒它。",
+      "descEn": "A sleeping spirit beast guards a treasure chest. You could try to steal it, or wake the beast.",
+      "choices": [
+        {
+          "id": "steal",
+          "textZh": "偷取（获得一件法宝，50%被发现失去20 HP）",
+          "textEn": "Steal (Gain a relic, 50% chance to lose 20 HP)",
+          "effects": [
+            { "type": "gain_relic", "rarity": "uncommon" },
+            { "type": "random", "outcomes": [
+              { "weight": 50, "effects": [] },
+              { "weight": 50, "effects": [{ "type": "lose_hp", "value": 20 }] }
+            ]}
+          ]
+        },
+        {
+          "id": "leave",
+          "textZh": "悄悄离开",
+          "textEn": "Quietly leave",
+          "effects": []
+        }
+      ]
+    }
+  ]
+}

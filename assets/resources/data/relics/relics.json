@@ -1,0 +1,164 @@
+{
+  "relics": [
+    {
+      "id": "relic_lingshi",
+      "nameZh": "灵石",
+      "nameEn": "Spirit Stone",
+      "descZh": "每回合开始时获得 3 点格挡",
+      "descEn": "Gain 3 Block at the start of each turn",
+      "rarity": "common",
+      "trigger": "on_turn_start",
+      "effects": [{ "type": "gain_block", "value": 3 }]
+    },
+    {
+      "id": "relic_juling",
+      "nameZh": "聚灵珠",
+      "nameEn": "Spirit Gathering Orb",
+      "descZh": "每场战斗开始时获得 1 点灵力",
+      "descEn": "Gain 1 Energy at the start of each battle",
+      "rarity": "common",
+      "trigger": "on_battle_start",
+      "effects": [{ "type": "gain_energy", "value": 1 }]
+    },
+    {
+      "id": "relic_chunyang",
+      "nameZh": "纯阳瓶",
+      "nameEn": "Pure Yang Flask",
+      "descZh": "每场战斗开始时恢复 5 点HP",
+      "descEn": "Heal 5 HP at the start of each battle",
+      "rarity": "common",
+      "trigger": "on_battle_start",
+      "effects": [{ "type": "heal", "value": 5 }],
+      "oncePerBattle": true
+    },
+    {
+      "id": "relic_yupei",
+      "nameZh": "护身玉佩",
+      "nameEn": "Protective Jade Pendant",
+      "descZh": "最大HP增加 10",
+      "descEn": "+10 Max HP",
+      "rarity": "common",
+      "trigger": "passive",
+      "effects": [{ "type": "max_hp_up", "value": 10 }]
+    },
+    {
+      "id": "relic_lingquan",
+      "nameZh": "灵泉玉",
+      "nameEn": "Spirit Spring Jade",
+      "descZh": "休息时额外恢复 15% HP",
+      "descEn": "Heal 15% more HP when resting",
+      "rarity": "common",
+      "trigger": "passive",
+      "effects": [{ "type": "heal_on_rest_bonus", "value": 15 }]
+    },
+    {
+      "id": "relic_tianjian",
+      "nameZh": "天剑令",
+      "nameEn": "Heavenly Sword Token",
+      "descZh": "每场战斗开始时获得 1 层力量",
+      "descEn": "Gain 1 Strength at the start of each battle",
+      "rarity": "uncommon",
+      "trigger": "on_battle_start",
+      "effects": [{ "type": "gain_strength", "value": 1 }],
+      "oncePerBattle": true
+    },
+    {
+      "id": "relic_bagua",
+      "nameZh": "八卦镜",
+      "nameEn": "Bagua Mirror",
+      "descZh": "每打出 3 张攻击牌，抽 1 张牌",
+      "descEn": "Every 3 Attack cards played, draw 1 card",
+      "rarity": "uncommon",
+      "trigger": "on_attack_played",
+      "effects": [{ "type": "draw_cards", "value": 1 }],
+      "counterThreshold": 3
+    },
+    {
+      "id": "relic_xuanbing",
+      "nameZh": "玄冰盾",
+      "nameEn": "Mystic Ice Shield",
+      "descZh": "每回合开始时获得 1 层敏捷",
+      "descEn": "Gain 1 Dexterity at the start of each turn",
+      "rarity": "uncommon",
+      "trigger": "on_turn_start",
+      "effects": [{ "type": "gain_dexterity", "value": 1 }]
+    },
+    {
+      "id": "relic_wuxing",
+      "nameZh": "五行轮",
+      "nameEn": "Five Elements Wheel",
+      "descZh": "触发五行连招时对所有敌人造成 5 点伤害",
+      "descEn": "Deal 5 damage to ALL enemies on Element Combo",
+      "rarity": "uncommon",
+      "trigger": "on_element_combo",
+      "effects": [{ "type": "deal_damage_all", "value": 5 }]
+    },
+    {
+      "id": "relic_lingtai",
+      "nameZh": "灵台仙境",
+      "nameEn": "Spirit Platform",
+      "descZh": "最大灵力 +1",
+      "descEn": "+1 Max Energy",
+      "rarity": "rare",
+      "trigger": "passive",
+      "effects": [{ "type": "max_energy_up", "value": 1 }]
+    },
+    {
+      "id": "relic_huntian",
+      "nameZh": "混天绫",
+      "nameEn": "Chaos Silk",
+      "descZh": "每回合开始时额外抽 1 张牌",
+      "descEn": "Draw 1 extra card at the start of each turn",
+      "rarity": "rare",
+      "trigger": "on_turn_start",
+      "effects": [{ "type": "draw_cards", "value": 1 }]
+    },
+    {
+      "id": "relic_jindan",
+      "nameZh": "金丹",
+      "nameEn": "Golden Core",
+      "descZh": "最大HP +20，每场战斗开始时获得 2 层力量",
+      "descEn": "+20 Max HP, gain 2 Strength at start of battle",
+      "rarity": "rare",
+      "trigger": "on_battle_start",
+      "effects": [
+        { "type": "gain_strength", "value": 2 }
+      ],
+      "oncePerBattle": true
+    },
+    {
+      "id": "relic_leijie_zhu",
+      "nameZh": "渡劫珠",
+      "nameEn": "Tribulation Orb",
+      "descZh": "击杀敌人时恢复 5 点HP",
+      "descEn": "Heal 5 HP when killing an enemy",
+      "rarity": "uncommon",
+      "trigger": "on_enemy_killed",
+      "effects": [{ "type": "heal", "value": 5 }]
+    },
+    {
+      "id": "relic_boss_kunlun",
+      "nameZh": "昆仑印",
+      "nameEn": "Kunlun Seal",
+      "descZh": "每场战斗开始时获得 10 点格挡和 1 层力量",
+      "descEn": "Gain 10 Block and 1 Strength at start of battle",
+      "rarity": "boss",
+      "trigger": "on_battle_start",
+      "effects": [
+        { "type": "gain_block", "value": 10 },
+        { "type": "gain_strength", "value": 1 }
+      ],
+      "oncePerBattle": true
+    },
+    {
+      "id": "relic_boss_longyuan",
+      "nameZh": "龙渊",
+      "nameEn": "Dragon Abyss",
+      "descZh": "每回合开始时额外获得 1 点灵力",
+      "descEn": "Gain 1 extra Energy at the start of each turn",
+      "rarity": "boss",
+      "trigger": "on_turn_start",
+      "effects": [{ "type": "gain_energy", "value": 1 }]
+    }
+  ]
+}

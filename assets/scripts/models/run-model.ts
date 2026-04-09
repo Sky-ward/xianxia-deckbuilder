@@ -1,5 +1,6 @@
 import { CardData } from './card-model';
 import { MapModel } from './map-model';
+import { RelicInstance, RelicData } from './relic-model';
 
 /**
  * 单次Run的完整状态 — 贯穿整个roguelike流程
@@ -7,6 +8,9 @@ import { MapModel } from './map-model';
 export class RunModel {
     /** 当前牌组（整个run期间累积） */
     masterDeck: CardData[] = [];
+
+    /** 持有的法宝 */
+    relics: RelicInstance[] = [];
 
     /** 地图 */
     map: MapModel;
@@ -42,6 +46,23 @@ export class RunModel {
         this.maxHp = maxHp;
         this.hp = maxHp;
         this.seed = seed;
+    }
+
+    /** 添加法宝 */
+    addRelic(data: RelicData): RelicInstance {
+        const instance = new RelicInstance(data);
+        this.relics.push(instance);
+        return instance;
+    }
+
+    /** 是否已持有某法宝 */
+    hasRelic(relicId: string): boolean {
+        return this.relics.some(r => r.id === relicId);
+    }
+
+    /** 获取已持有法宝ID集合 */
+    get relicIds(): Set<string> {
+        return new Set(this.relics.map(r => r.id));
     }
 
     /** 添加卡牌到牌组 */
